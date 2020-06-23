@@ -2,8 +2,10 @@ const mongoose = require("mongoose");
 const { Schema } = require("mongoose");
 
 const User = new Schema({
-  googleID: {
-    type: String
+  googleID: String,
+  credits: {
+    type: Number,
+    default: 0
   }
 });
 
